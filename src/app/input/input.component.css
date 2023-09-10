@@ -1,0 +1,17 @@
+.input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+  .input-container input {
+    outline: none;
+    padding: 2px 8px;
+    border: #0089ff;
+    border-radius: 5px;
+    height: 40px;
+    border: 2px solid rgba(189, 188, 188, 1);
+  }
+  .error{
+    color: red;
+    font-size: 11px;
+}

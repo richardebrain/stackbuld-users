@@ -1,0 +1,24 @@
+<div class="input-container">
+  <label [for]="name">{{ label }}</label>
+  <input
+    [type]="type"
+    [id]="name"
+    minlength="8"
+    [placeholder]="placeholder"
+    [value]="value"
+    (blur)="onTouched()"
+    (input)="onChangeEvent($event)"
+  />
+  <div class="errors">
+    <p *ngIf="customError" class="error">{{ customError }}</p>
+    <!-- <p
+      *ngIf="
+        userForm.get('name')?.hasError('minlength') &&
+        userForm.get('name')?.touched
+      "
+      class="error"
+    >
+      Name must be at least 18 characters
+    </p> -->
+  </div>
+</div>
